@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\Hastane.ViewModels\\Hastane.ViewModels.csproj",
+      "projectUniqueName": "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\WebProgramlama\\Hastane.ViewModels\\Hastane.ViewModels.csproj",
       "projectName": "Hastane.ViewModels",
-      "projectPath": "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\Hastane.ViewModels\\Hastane.ViewModels.csproj",
+      "projectPath": "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\WebProgramlama\\Hastane.ViewModels\\Hastane.ViewModels.csproj",
       "packagesPath": "C:\\Users\\Eren\\.nuget\\packages\\",
-      "outputPath": "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\Hastane.ViewModels\\obj\\",
+      "outputPath": "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\WebProgramlama\\Hastane.ViewModels\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Eren\\AppData\\Roaming\\NuGet\\NuGet.Config",

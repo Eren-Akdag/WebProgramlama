@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\Hastane.Services\\Hastane.Services.csproj",
+      "projectUniqueName": "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\WebProgramlama\\Hastane.Services\\Hastane.Services.csproj",
       "projectName": "Hastane.Services",
-      "projectPath": "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\Hastane.Services\\Hastane.Services.csproj",
+      "projectPath": "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\WebProgramlama\\Hastane.Services\\Hastane.Services.csproj",
       "packagesPath": "C:\\Users\\Eren\\.nuget\\packages\\",
-      "outputPath": "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\Hastane.Services\\obj\\",
+      "outputPath": "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\WebProgramlama\\Hastane.Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Eren\\AppData\\Roaming\\NuGet\\NuGet.Config",

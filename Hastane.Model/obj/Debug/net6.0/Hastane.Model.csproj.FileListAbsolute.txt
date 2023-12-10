@@ -1,0 +1,5 @@
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Model\obj\Debug\net6.0\Hastane.Model.csproj.AssemblyReference.cache
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Model\obj\Debug\net6.0\Hastane.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Model\obj\Debug\net6.0\Hastane.Model.AssemblyInfoInputs.cache
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Model\obj\Debug\net6.0\Hastane.Model.AssemblyInfo.cs
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Model\obj\Debug\net6.0\Hastane.Model.csproj.CoreCompileInputs.cache

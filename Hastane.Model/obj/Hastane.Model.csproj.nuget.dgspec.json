@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\Hastane.Model\\Hastane.Model.csproj": {}
+    "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\WebProgramlama\\Hastane.Model\\Hastane.Model.csproj": {}
   },
   "projects": {
-    "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\Hastane.Model\\Hastane.Model.csproj": {
+    "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\WebProgramlama\\Hastane.Model\\Hastane.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\Hastane.Model\\Hastane.Model.csproj",
+        "projectUniqueName": "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\WebProgramlama\\Hastane.Model\\Hastane.Model.csproj",
         "projectName": "Hastane.Model",
-        "projectPath": "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\Hastane.Model\\Hastane.Model.csproj",
+        "projectPath": "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\WebProgramlama\\Hastane.Model\\Hastane.Model.csproj",
         "packagesPath": "C:\\Users\\Eren\\.nuget\\packages\\",
-        "outputPath": "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\Hastane.Model\\obj\\",
+        "outputPath": "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\WebProgramlama\\Hastane.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Eren\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
