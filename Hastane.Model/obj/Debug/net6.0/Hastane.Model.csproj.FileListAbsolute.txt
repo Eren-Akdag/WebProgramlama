@@ -3,3 +3,12 @@ D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Model\obj\Debug\
 D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Model\obj\Debug\net6.0\Hastane.Model.AssemblyInfoInputs.cache
 D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Model\obj\Debug\net6.0\Hastane.Model.AssemblyInfo.cs
 D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Model\obj\Debug\net6.0\Hastane.Model.csproj.CoreCompileInputs.cache
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Model\bin\Debug\net6.0\Hastane.Model.deps.json
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Model\bin\Debug\net6.0\Hastane.Model.dll
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Model\bin\Debug\net6.0\Hastane.Model.pdb
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Model\obj\Debug\net6.0\Hastane.Model.dll
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Model\obj\Debug\net6.0\refint\Hastane.Model.dll
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Model\obj\Debug\net6.0\Hastane.Model.pdb
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Model\obj\Debug\net6.0\ref\Hastane.Model.dll
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Model\bin\Debug\net6.0\Hastane.Model.runtimeconfig.json
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Model\obj\Debug\net6.0\Hastane.Model.genruntimeconfig.cache

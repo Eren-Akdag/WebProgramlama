@@ -54,7 +54,7 @@ namespace Hastane.Utilities
                   Email = "harkesh@xyz.com"
                 },"Harkesh@123").GetAwaiter().GetResult();
 
-                var Appuser = _context.ApplicationUsers.FirstOrDefault(x=>x.Email == "harkesh@xyz.com");
+                var Appuser = _context.ApplicationUsers.FirstOrDefault(x => x.Email == "harkesh@xyz.com");
 
                 if (Appuser != null) 
                 {

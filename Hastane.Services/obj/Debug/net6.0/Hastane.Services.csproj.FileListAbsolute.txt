@@ -1,0 +1,12 @@
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Services\bin\Debug\net6.0\Hastane.Services.deps.json
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Services\bin\Debug\net6.0\Hastane.Services.dll
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Services\bin\Debug\net6.0\Hastane.Services.pdb
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Services\obj\Debug\net6.0\Hastane.Services.csproj.AssemblyReference.cache
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Services\obj\Debug\net6.0\Hastane.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Services\obj\Debug\net6.0\Hastane.Services.AssemblyInfoInputs.cache
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Services\obj\Debug\net6.0\Hastane.Services.AssemblyInfo.cs
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Services\obj\Debug\net6.0\Hastane.Services.csproj.CoreCompileInputs.cache
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Services\obj\Debug\net6.0\Hastane.Services.dll
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Services\obj\Debug\net6.0\refint\Hastane.Services.dll
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Services\obj\Debug\net6.0\Hastane.Services.pdb
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Services\obj\Debug\net6.0\ref\Hastane.Services.dll

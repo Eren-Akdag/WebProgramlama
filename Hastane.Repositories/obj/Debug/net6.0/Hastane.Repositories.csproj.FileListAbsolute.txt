@@ -12,3 +12,6 @@ D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Repositories\obj
 D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Repositories\obj\Debug\net6.0\Hastane.Repositories.pdb
 D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Repositories\obj\Debug\net6.0\Hastane.Repositories.genruntimeconfig.cache
 D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Repositories\obj\Debug\net6.0\ref\Hastane.Repositories.dll
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Repositories\bin\Debug\net6.0\Hastane.Model.dll
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Repositories\bin\Debug\net6.0\Hastane.Model.pdb
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Repositories\obj\Debug\net6.0\Hastane.Repositories.csproj.CopyComplete

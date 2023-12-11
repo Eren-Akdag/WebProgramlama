@@ -9,6 +9,7 @@
       "Hastane.Web/1.0.0": {
         "dependencies": {
           "Hastane.Repositories": "1.0.0",
+          "Hastane.Utilities": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.23",
           "Microsoft.AspNetCore.Identity.UI": "6.0.23",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.23",
@@ -17,6 +18,18 @@
         },
         "runtime": {
           "Hastane.Web.dll": {}
+        }
+      },
+      "EntityFramework/6.1.0": {
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.1.30225.0"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.1.30225.0"
+          }
         }
       },
       "Humanizer/2.14.1": {
@@ -585,6 +598,26 @@
         }
       },
       "MessagePackAnalyzer/2.1.152": {},
+      "Microsoft.AspNet.Identity.Core/2.2.4": {
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.2.4.50621"
+          }
+        }
+      },
+      "Microsoft.AspNet.Identity.EntityFramework/2.2.4": {
+        "dependencies": {
+          "EntityFramework": "6.1.0",
+          "Microsoft.AspNet.Identity.Core": "2.2.4"
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.EntityFramework.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.2.4.50621"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/6.0.23": {
         "runtime": {
           "lib/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {
@@ -2558,13 +2591,35 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "Hastane.Model/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.23"
+        },
+        "runtime": {
+          "Hastane.Model.dll": {}
+        }
+      },
       "Hastane.Repositories/1.0.0": {
         "dependencies": {
+          "Hastane.Model": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.23",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.23"
         },
         "runtime": {
           "Hastane.Repositories.dll": {}
+        }
+      },
+      "Hastane.Utilities/1.0.0": {
+        "dependencies": {
+          "Hastane.Model": "1.0.0",
+          "Hastane.Repositories": "1.0.0",
+          "Microsoft.AspNet.Identity.EntityFramework": "2.2.4",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.23",
+          "Microsoft.AspNetCore.Identity.UI": "6.0.23",
+          "Microsoft.Extensions.Identity.Core": "6.0.23"
+        },
+        "runtime": {
+          "Hastane.Utilities.dll": {}
         }
       }
     }
@@ -2574,6 +2629,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "EntityFramework/6.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-u/M0OEfqxTUsL5BwzD66eBGm278/ozqdLK3JvMO6QwUxxc+z7ZUkTYm4suDhWRqzkc6mOhvXDQY5dZUwbldxyQ==",
+      "path": "entityframework/6.1.0",
+      "hashPath": "entityframework.6.1.0.nupkg.sha512"
     },
     "Humanizer/2.14.1": {
       "type": "package",
@@ -2945,6 +3007,20 @@
       "sha512": "sha512-uJhZlGMkXDaFYsH8V9S6o1EyvsUqB9mpU4DVBXNr0DXZVzZMhuLP1IkLj5xK3EKlaAcvkFkZv3eSvuz360wb3Q==",
       "path": "messagepackanalyzer/2.1.152",
       "hashPath": "messagepackanalyzer.2.1.152.nupkg.sha512"
+    },
+    "Microsoft.AspNet.Identity.Core/2.2.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-s3u/o3iG5h0z7Ggukwo4soPwogD56ZrYbolGxTfw41zkuG6jAXUJT/V3EThqHJXGuCNvWSdSnnwAhPfT9Sn36g==",
+      "path": "microsoft.aspnet.identity.core/2.2.4",
+      "hashPath": "microsoft.aspnet.identity.core.2.2.4.nupkg.sha512"
+    },
+    "Microsoft.AspNet.Identity.EntityFramework/2.2.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ay5FMSwNF0tb9KiC4l4aqm7D1E6Da9nU3euI/X0UD1SuumJX7OkZ9LtZjU9xT3xmou3XLXO8DDcgrW6udSQk6Q==",
+      "path": "microsoft.aspnet.identity.entityframework/2.2.4",
+      "hashPath": "microsoft.aspnet.identity.entityframework.2.2.4.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/6.0.23": {
       "type": "package",
@@ -4136,7 +4212,17 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
+    "Hastane.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Hastane.Repositories/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hastane.Utilities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

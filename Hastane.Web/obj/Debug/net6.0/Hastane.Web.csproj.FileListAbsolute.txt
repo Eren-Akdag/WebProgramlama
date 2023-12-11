@@ -256,4 +256,12 @@ D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Web\bin\Debug\ne
 D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Web\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
 D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Web\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
 D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Web\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Web\bin\Debug\net6.0\Hastane.Model.dll
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Web\bin\Debug\net6.0\Hastane.Model.pdb
 D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Web\obj\Debug\net6.0\Hastane.Web.MvcApplicationPartsAssemblyInfo.cs
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Web\bin\Debug\net6.0\EntityFramework.SqlServer.dll
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Web\bin\Debug\net6.0\EntityFramework.dll
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Web\bin\Debug\net6.0\Microsoft.AspNet.Identity.Core.dll
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Web\bin\Debug\net6.0\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Web\bin\Debug\net6.0\Hastane.Utilities.dll
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Web\bin\Debug\net6.0\Hastane.Utilities.pdb

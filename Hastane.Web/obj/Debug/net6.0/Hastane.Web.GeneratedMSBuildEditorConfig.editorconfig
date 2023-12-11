@@ -176,6 +176,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Desk/SAU_WORK/WebProgramlama/project1/WebProgramlama/Hastane.Web/Areas/Patient/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUGF0aWVudFxWaWV3c1xIb21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Desk/SAU_WORK/WebProgramlama/project1/WebProgramlama/Hastane.Web/Areas/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Desk/SAU_WORK/WebProgramlama/project1/WebProgramlama/Hastane.Web/Areas/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Desk/SAU_WORK/WebProgramlama/project1/WebProgramlama/Hastane.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
