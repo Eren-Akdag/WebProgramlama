@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hastane.Model
 {
-    public class Hastane
+    public class Medicine
     {
         public int Id { get; set; }
 
@@ -14,14 +14,13 @@ namespace Hastane.Model
 
         public string Type { get; set; }
 
-        public string City { get; set; }
+        public decimal Cost { get; set; }
 
-        public string PinCode { get; set; }
+        public string Description { get; set; } 
 
-        public string Country { get; set; }
+        public ICollection<MedicineReport> MedicineReport { get; set; }
 
-        public ICollection<Room> Rooms { get; set; }
+        public ICollection<PrescribedMedicine> PrescribedMedicine { get; set; }
 
-        public ICollection<Contact> Contacts { get; set; }
     }
 }

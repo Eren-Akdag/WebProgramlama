@@ -27,9 +27,11 @@ namespace Hastane.Model
         public Department Department { get; set; }
 
         public ICollection<Appointment> Appointment { get; set; }
+
+        public ICollection<Payroll> Payroll { get; set; }
     }
 }
-
+  
 namespace Hastane.Model
 {
     public enum Gender
