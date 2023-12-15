@@ -6,7 +6,7 @@
 
         public int HospitalId { get; set; }
 
-        public Hastane Hastane { get; set; }
+        public HastaneInfoo Hastane { get; set; }
 
         public string Email { get; set; }
 

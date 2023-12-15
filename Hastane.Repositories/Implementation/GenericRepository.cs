@@ -122,5 +122,10 @@ namespace Hastane.Repositories.Implementation
         {
             throw new NotImplementedException();
         }
+
+        public void Add(object model)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

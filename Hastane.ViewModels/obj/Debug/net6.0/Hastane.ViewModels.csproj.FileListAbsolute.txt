@@ -10,3 +10,6 @@ D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.ViewModels\obj\D
 D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.ViewModels\obj\Debug\net6.0\refint\Hastane.ViewModels.dll
 D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.ViewModels\obj\Debug\net6.0\Hastane.ViewModels.pdb
 D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.ViewModels\obj\Debug\net6.0\ref\Hastane.ViewModels.dll
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.ViewModels\bin\Debug\net6.0\Hastane.Model.dll
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.ViewModels\bin\Debug\net6.0\Hastane.Model.pdb
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.ViewModels\obj\Debug\net6.0\Hastane.ViewModels.csproj.CopyComplete

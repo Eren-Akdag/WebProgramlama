@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hastane.Model
 {
-    public class Hastane
+    public class HastaneInfoo
     {
         public int Id { get; set; }
 

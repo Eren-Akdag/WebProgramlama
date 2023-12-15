@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Hastane.Model
 {
@@ -25,8 +26,10 @@ namespace Hastane.Model
         public string Specialist { get; set; }
 
         public Department Department { get; set; }
+        [NotMapped]
 
         public ICollection<Appointment> Appointment { get; set; }
+        [NotMapped]
 
         public ICollection<Payroll> Payroll { get; set; }
     }

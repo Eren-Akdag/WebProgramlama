@@ -25,6 +25,6 @@ namespace Hastane.Repositories.Interfaces
 
         void Delete(T entity);
         Task DeleteAsync(T entity);
-
+        void Add(object model);
     }
 }

@@ -10,3 +10,12 @@ D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Services\obj\Deb
 D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Services\obj\Debug\net6.0\refint\Hastane.Services.dll
 D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Services\obj\Debug\net6.0\Hastane.Services.pdb
 D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Services\obj\Debug\net6.0\ref\Hastane.Services.dll
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Services\bin\Debug\net6.0\Hastane.Model.dll
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Services\bin\Debug\net6.0\Hastane.Repositories.dll
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Services\bin\Debug\net6.0\Hastane.Utilities.dll
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Services\bin\Debug\net6.0\Hastane.ViewModels.dll
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Services\bin\Debug\net6.0\Hastane.Utilities.pdb
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Services\bin\Debug\net6.0\Hastane.ViewModels.pdb
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Services\bin\Debug\net6.0\Hastane.Model.pdb
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Services\bin\Debug\net6.0\Hastane.Repositories.pdb
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Services\obj\Debug\net6.0\Hastane.Services.csproj.CopyComplete
