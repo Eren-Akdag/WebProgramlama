@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "FSxOudh8m/czeCNOxxI445otvpnEeYJZMIUZgXgbyJ6oVP4A6YsfscK3GMDvWxLibY7ItR/naH/KFk4Cy7H1BA==",
+  "dgSpecHash": "9JUDCASJ1dVLV6EPfqkO3/0RuwyIgfo602fvRkeVmyAxFYV8Dz2OpEir49ugBj9N1yY15NGXe1vfTpF29eGUlA==",
   "success": true,
   "projectFilePath": "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\WebProgramlama\\Hastane.Web\\Hastane.Web.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Eren\\.nuget\\packages\\cloudscribe.pagination.models\\1.1.0\\cloudscribe.pagination.models.1.1.0.nupkg.sha512",
+    "C:\\Users\\Eren\\.nuget\\packages\\cloudscribe.web.pagination\\6.0.0\\cloudscribe.web.pagination.6.0.0.nupkg.sha512",
     "C:\\Users\\Eren\\.nuget\\packages\\entityframework\\6.1.0\\entityframework.6.1.0.nupkg.sha512",
     "C:\\Users\\Eren\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Eren\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -181,6 +183,7 @@
     "C:\\Users\\Eren\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
     "C:\\Users\\Eren\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "C:\\Users\\Eren\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
+    "C:\\Users\\Eren\\.nuget\\packages\\system.linq.queryable\\4.3.0\\system.linq.queryable.4.3.0.nupkg.sha512",
     "C:\\Users\\Eren\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
     "C:\\Users\\Eren\\.nuget\\packages\\system.net.http\\4.3.0\\system.net.http.4.3.0.nupkg.sha512",
     "C:\\Users\\Eren\\.nuget\\packages\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",

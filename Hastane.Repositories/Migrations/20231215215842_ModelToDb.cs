@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Hastane.Repositories.Migrations
 {
-    public partial class ModeltoDatabase : Migration
+    public partial class ModelToDb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -168,30 +168,28 @@ namespace Hastane.Repositories.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "PatientReport",
+                name: "PatientReports",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Diagnose = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DoctorId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    PatientId = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                    DoctorId = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    PatientId = table.Column<string>(type: "nvarchar(450)", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_PatientReport", x => x.Id);
+                    table.PrimaryKey("PK_PatientReports", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_PatientReport_AspNetUsers_DoctorId",
+                        name: "FK_PatientReports_AspNetUsers_DoctorId",
                         column: x => x.DoctorId,
                         principalTable: "AspNetUsers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_PatientReport_AspNetUsers_PatientId",
+                        name: "FK_PatientReports_AspNetUsers_PatientId",
                         column: x => x.PatientId,
                         principalTable: "AspNetUsers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -333,9 +331,9 @@ namespace Hastane.Repositories.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_PrescribedMedicines_PatientReport_PatientReportId",
+                        name: "FK_PrescribedMedicines_PatientReports_PatientReportId",
                         column: x => x.PatientReportId,
-                        principalTable: "PatientReport",
+                        principalTable: "PatientReports",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -445,13 +443,13 @@ namespace Hastane.Repositories.Migrations
                 column: "SupplierId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_PatientReport_DoctorId",
-                table: "PatientReport",
+                name: "IX_PatientReports_DoctorId",
+                table: "PatientReports",
                 column: "DoctorId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_PatientReport_PatientId",
-                table: "PatientReport",
+                name: "IX_PatientReports_PatientId",
+                table: "PatientReports",
                 column: "PatientId");
 
             migrationBuilder.CreateIndex(
@@ -530,7 +528,7 @@ namespace Hastane.Repositories.Migrations
                 name: "Medicines");
 
             migrationBuilder.DropTable(
-                name: "PatientReport");
+                name: "PatientReports");
 
             migrationBuilder.DropTable(
                 name: "HastaneInfos");

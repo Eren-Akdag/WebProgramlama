@@ -16,6 +16,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Desk/SAU_WORK/WebProgramlama/project1/WebProgramlama/Hastane.Web/Areas/Admin/Views/Hastanes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSGFzdGFuZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Desk/SAU_WORK/WebProgramlama/project1/WebProgramlama/Hastane.Web/Areas/Admin/Views/Hastanes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSGFzdGFuZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Desk/SAU_WORK/WebProgramlama/project1/WebProgramlama/Hastane.Web/Areas/Admin/Views/Hastanes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSGFzdGFuZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Desk/SAU_WORK/WebProgramlama/project1/WebProgramlama/Hastane.Web/Areas/Identity/Pages/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Hastane.Repositories.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231215200159_ModeltoDatabase")]
-    partial class ModeltoDatabase
+    [Migration("20231215215842_ModelToDb")]
+    partial class ModelToDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -350,11 +350,9 @@ namespace Hastane.Repositories.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("DoctorId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("PatientId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
@@ -363,7 +361,7 @@ namespace Hastane.Repositories.Migrations
 
                     b.HasIndex("PatientId");
 
-                    b.ToTable("PatientReport");
+                    b.ToTable("PatientReports");
                 });
 
             modelBuilder.Entity("Hastane.Model.Payroll", b =>
@@ -831,15 +829,11 @@ namespace Hastane.Repositories.Migrations
                 {
                     b.HasOne("Hastane.Model.ApplicationUser", "Doctor")
                         .WithMany()
-                        .HasForeignKey("DoctorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("DoctorId");
 
                     b.HasOne("Hastane.Model.ApplicationUser", "Patient")
                         .WithMany()
-                        .HasForeignKey("PatientId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("PatientId");
 
                     b.Navigation("Doctor");
 

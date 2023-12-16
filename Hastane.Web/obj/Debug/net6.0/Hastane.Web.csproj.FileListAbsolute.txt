@@ -265,3 +265,9 @@ D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Web\bin\Debug\ne
 D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Web\bin\Debug\net6.0\Microsoft.AspNet.Identity.EntityFramework.dll
 D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Web\bin\Debug\net6.0\Hastane.Utilities.dll
 D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Web\bin\Debug\net6.0\Hastane.Utilities.pdb
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Web\bin\Debug\net6.0\Hastane.Services.dll
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Web\bin\Debug\net6.0\Hastane.ViewModels.dll
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Web\bin\Debug\net6.0\Hastane.Services.pdb
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Web\bin\Debug\net6.0\Hastane.ViewModels.pdb
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Web\bin\Debug\net6.0\cloudscribe.Pagination.Models.dll
+D:\Desk\SAU_WORK\WebProgramlama\project1\WebProgramlama\Hastane.Web\bin\Debug\net6.0\cloudscribe.Web.Pagination.dll
