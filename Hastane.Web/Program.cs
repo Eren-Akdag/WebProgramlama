@@ -25,7 +25,14 @@ builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
 
 builder.Services.AddScoped<IEmailSender, EmailSender>();
 
+//builder.Services.AddScoped<IContactService, ContactService>();
+//builder.Services.AddScoped<IRoomService, RoomService>();
+
 builder.Services.AddTransient<IHastaneInfo, HastaneInfoService>();
+
+builder.Services.AddTransient<IRoomService, RoomService>();
+
+builder.Services.AddTransient<IContactService, ContactService>();
 
 builder.Services.AddRazorPages();
 

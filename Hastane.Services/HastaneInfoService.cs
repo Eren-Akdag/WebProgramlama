@@ -3,6 +3,7 @@ using Hastane.Repositories.Interfaces;
 using Hastane.Utilities;
 using Hastane.ViewModels;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -53,6 +54,12 @@ namespace Hastane.Services
                 PageSize = pageSize
             };
             return result;
+        }
+
+        public IEnumerable<HastaneInfoViewModell> GetAll()
+        {
+            var modelList = _unitOfWork.GenericRepository<HastaneInfoo>().GetAll().ToList();
+            return ConvertModelToViewModelList(modelList);
         }
 
         public HastaneInfoViewModell GetHospitalById(int hastaneId)

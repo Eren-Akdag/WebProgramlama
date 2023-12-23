@@ -1,6 +1,7 @@
 ﻿using Hastane.Utilities;
 using Hastane.ViewModels;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,5 +20,8 @@ namespace Hastane.Services
         void InsertHospitalInfo(HastaneInfoViewModell hastaneInfoo);
 
         void DeleteHospitalInfo(int id);
+
+        IEnumerable<HastaneInfoViewModell> GetAll();
+
     }
 }

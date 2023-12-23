@@ -25,6 +25,10 @@ namespace Hastane.Model
 
         public string Specialist { get; set; }
 
+        public bool IsDoctors { get; set; }
+
+        public string PictureUri { get; set; }
+
         public Department Department { get; set; }
         [NotMapped]
 

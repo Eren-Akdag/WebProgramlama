@@ -19,6 +19,8 @@ namespace Hastane.ViewModels
 
         public int HastaneInfoId { get; set; }
 
+        public HastaneInfoo HastaneInfoo { get; set; }
+
         public RoomViewModel() 
         {
             
@@ -31,6 +33,7 @@ namespace Hastane.ViewModels
             Type = model.Type;
             Status = model.Status;
             HastaneInfoId = model.HospitalId;
+            HastaneInfoo = model.Hastane;
         }
 
         public Room ConvertViewModel(RoomViewModel model)
@@ -41,7 +44,8 @@ namespace Hastane.ViewModels
                 RoomNumber = model.RoomNumber,
                 Type = model.Type,
                 Status = model.Status,
-                HospitalId = model.HastaneInfoId
+                HospitalId = model.HastaneInfoId,
+                Hastane = model.HastaneInfoo
             };
         }
     }
