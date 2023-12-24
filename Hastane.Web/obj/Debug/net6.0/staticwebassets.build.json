@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vZfVLP3JwIM6L6t2ePLvdC0FSKIDfw+/sVDagsFm/uw=",
+  "Hash": "6q7fSDVmXAHf7fX+aiUsMetNW6sox0xczevXvAtDCgA=",
   "Source": "Hastane.Web",
   "BasePath": "_content/Hastane.Web",
   "Mode": "Default",
@@ -1103,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\WebProgramlama\\Hastane.Web\\wwwroot\\Images\\doctor.png",
+      "SourceId": "Hastane.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\WebProgramlama\\Hastane.Web\\wwwroot\\",
+      "BasePath": "_content/Hastane.Web",
+      "RelativePath": "Images/doctor.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\doctor.png"
     },
     {
       "Identity": "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\WebProgramlama\\Hastane.Web\\wwwroot\\js\\site.js",

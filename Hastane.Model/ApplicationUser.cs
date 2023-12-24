@@ -13,6 +13,9 @@ namespace Hastane.Model
 {
     public class ApplicationUser : IdentityUser
     {
+
+
+
         public string Name { get; set; }
 
         public Gender Gender { get; set; }
@@ -36,6 +39,8 @@ namespace Hastane.Model
         [NotMapped]
 
         public ICollection<Payroll> Payroll { get; set; }
+
+        public string City { get; set; }
     }
 }
   

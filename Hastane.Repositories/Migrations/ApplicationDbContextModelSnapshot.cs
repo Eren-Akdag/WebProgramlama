@@ -746,6 +746,10 @@ namespace Hastane.Repositories.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("PictureUri")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Specialist")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

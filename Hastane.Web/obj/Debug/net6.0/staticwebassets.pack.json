@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Hastane.Web.bundle.scp.css"
     },
     {
+      "Id": "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\WebProgramlama\\Hastane.Web\\wwwroot\\Images\\doctor.png",
+      "PackagePath": "staticwebassets\\Images\\doctor.png"
+    },
+    {
       "Id": "D:\\Desk\\SAU_WORK\\WebProgramlama\\project1\\WebProgramlama\\Hastane.Web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
