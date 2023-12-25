@@ -22,6 +22,8 @@ namespace Hastane.Model
 
         public string Nationality { get; set; }
 
+        public string City { get; set; }
+
         public string Address { get; set; }
 
         public DateTime DOB { get; set; }
@@ -40,7 +42,6 @@ namespace Hastane.Model
 
         public ICollection<Payroll> Payroll { get; set; }
 
-        public string City { get; set; }
     }
 }
   
