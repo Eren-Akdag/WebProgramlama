@@ -1,0 +1,51 @@
+﻿@model Policlinic
+<h2>Polikinlik Ekleme Sayfasi</h2>
+
+<form method="post">
+
+
+	<div class="border p-3 mt-5">
+
+		<div class="row pb-3  form-group">
+			<h2 class="text-primary "><strong>Polikinlik </strong> </h2>
+			</hr>
+		</div>
+	
+		<div class="mb-3  form-group"
+		<label asp-for="Id"> </label>
+		<input asp-for="Id"  disabled class="form-control">
+		<span asp-validation-for="Id" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3  form-group"
+		<label asp-for="Name"> </label>
+		<input asp-for="Name"  class="form-control">
+		<span asp-validation-for="Name" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3  form-group"
+		<label asp-for="Address"> </label>
+		<input asp-for="Address"  class="form-control">
+		<span asp-validation-for="Address" class="text-danger"></span>
+		</div>
+
+
+
+
+		
+
+
+		<button type="submit" class="btn btn-outline-primary" style="width:250px">Polikinlik Ekle</button>
+
+		<a asp-controller="Policlinic" asp-action="Index" class="btn btn-outline-primary style="width:250px">
+			Polikinlik Listesi
+		</a>
+
+	</div>
+
+
+
+
+
+
+</form>
