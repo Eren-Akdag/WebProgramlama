@@ -1,0 +1,53 @@
+﻿@model Patient
+<h2>Hasta Sil Sayfasi</h2>
+
+<form method="post">
+
+	@* <input asp-for="DoktorId" hidden/> *@
+
+	<div class="border p-3 mt-5">
+
+		<div class="row pb-3  form-group">
+			<h2 class="text-primary "><strong>Hasta Sil</strong> </h2>
+			</hr>
+		</div>
+
+
+		<div class="mb-3  form-group"
+		<label asp-for="Name"></label>
+		<input asp-for="Name" disabled class="form-control">
+		
+		</div>
+
+		<div class="mb-3  form-group"
+		<label asp-for="Surname"></label>
+		<input asp-for="Surname" disabled class="form-control">
+		
+		</div>
+
+		<div class="mb-3  form-group">
+			<label asp-for="Telephone"></label>
+			<input asp-for="Telephone" disabled class="form-control">
+		</div>
+
+		<div class="mb-3 form-group"
+		<label asp-for="Description">Alan</label>
+		<input asp-for="Description" disabled class="form-control">
+		</div>
+
+		<br />
+
+		<button type="submit" class="btn btn-outline-primary" style="width:250px">Hasta Sil</button>
+
+		<a asp-controller="Patient" asp-action="Index" class="btn btn-outline-primary style="width:250px">
+			Hastalar Listesine Dön
+		</a>
+
+	</div>
+
+
+
+
+
+
+</form>

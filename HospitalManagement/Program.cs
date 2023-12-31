@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Localization;
 using System.Globalization;
 using System.Reflection;
 using Microsoft.AspNetCore.Identity.UI.Services;
+using Microsoft.Extensions.Options;
 
 namespace HospitalManagement
 {
@@ -57,6 +58,7 @@ namespace HospitalManagement
 
             #endregion
 
+
             builder.Services.AddControllers();///APII
             builder.Services.AddRazorPages();
 
@@ -87,6 +89,8 @@ namespace HospitalManagement
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            app.UseRequestLocalization(app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
 
             app.UseRouting();
 

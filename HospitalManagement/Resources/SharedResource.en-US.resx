@@ -117,20 +117,42 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="alivefa" xml:space="preserve">
-    <value>These doctors are experienced healthcare professionals with degrees of expertise in their field.</value>
+  <data name="HospitalConnection" xml:space="preserve">
+    <value>There are various ways to contact our hospital. Patients and visitors can reach us by phone, email, or through our website.
+
+Phone number: 123 456 789
+Email address: akdag@hospital.com
+Our website: www.akdag.com
+
+Additionally, the physical address of our hospital is: İnönü Mah. Nizamiye Caddesi No:1-9, Şişli / Istanbul
+
+We would be pleased to listen to the questions, concerns, or feedback from our patients and visitors. Feel free to reach out to us using the contact information provided.</value>
   </data>
-  <data name="doktor" xml:space="preserve">
-    <value>Our doctor staff</value>
+  <data name="HospitalConnectionTitle" xml:space="preserve">
+    <value>Hospital Contact Information</value>
   </data>
-  <data name="ferda" xml:space="preserve">
-    <value>Ferda is known for her understanding approach towards her patients and is happy to support them throughout the treatment process.</value>
+  <data name="HospitalDescription" xml:space="preserve">
+    <value>Our hospital is equipped with modern medical technology and equipment, offering a wide range of healthcare services. We provide services in emergency care, intensive care, surgical services, internal medicine, pediatrics, and many other fields.
+
+Our experienced and expert healthcare team is available 24 hours a day to provide the highest quality care to our patients. We offer amenities such as a cafeteria, parking, and free Wi-Fi for the comfort of our patients and visitors.
+
+Our hospital strives to promote excellence in patient care and continuously works towards improvement in healthcare services. The health and well-being of our patients are always our top priorities.</value>
   </data>
-  <data name="home" xml:space="preserve">
-    <value> Home Page</value>
+  <data name="HospitalDescriptionTitle" xml:space="preserve">
+    <value>Definition of the Hospital</value>
   </data>
-  <data name="nazli" xml:space="preserve">
-    <value>Nazlı is a doctor known for her extensive medical knowledge and ability to empathize with her patients.</value>
+  <data name="HospitalName" xml:space="preserve">
+    <value>AKDAG Hospital</value>
+  </data>
+  <data name="OurDoctors" xml:space="preserve">
+    <value>The doctors in our hospital have extensive experience and knowledge in various medical disciplines. Each one is dedicated to providing the highest quality care to our patients. Our doctors use the latest medical information and technologies to understand our patients' health issues, make accurate diagnoses, and create effective treatment plans.
+
+Our doctors recognize that each patient is unique, with their own specific healthcare needs. Therefore, they approach each patient individually and create a personalized care plan to help each patient achieve their health goals.
+
+Our doctors deeply care about the health and well-being of our patients and continually make efforts to promote excellence in healthcare services for our patients.</value>
+  </data>
+  <data name="OurDoctorsTitle" xml:space="preserve">
+    <value>Our doctors</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Welcome </value>

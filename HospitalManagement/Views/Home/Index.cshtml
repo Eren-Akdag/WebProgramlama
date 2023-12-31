@@ -2,7 +2,58 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@_localization.Getkey("HospitalName")</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center container">
+        <a class="navbar-brand mx-auto" href="#">@_localization.Getkey("HospitalName")</a>
+    </nav>
+
+    <div class="d-flex justify-content-center">
+        <img class="mt-auto" src="/image/Hastane4.jpg" alt="" style="max-width: 100%; height: auto;" />
+    </div>
+    
+    <div class="container mt-4">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">@_localization.Getkey("Welcome")</h1>
+            <hr class="my-4">
+            <h2>@_localization.Getkey("HospitalDescriptionTitle"):</h2>
+            <p>@_localization.Getkey("HospitalDescription")</p>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h3>@_localization.Getkey("OurDoctorsTitle"):</h3>
+                    </div>
+                    <img src="/image/OurDoctor1.png" alt="" />
+                    <div class="card-body">
+                        <p class="card-text">@_localization.Getkey("OurDoctors")</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h3>@_localization.Getkey("HospitalConnectionTitle"):</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">@_localization.Getkey("HospitalConnection")</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div style="margin-bottom:50px">   </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+

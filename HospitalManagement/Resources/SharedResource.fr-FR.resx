@@ -117,22 +117,44 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="alivefa" xml:space="preserve">
-    <value>Ces médecins sont des professionnels de santé expérimentés possédant des degrés d’expertise dans leur domaine.</value>
+  <data name="HospitalConnection" xml:space="preserve">
+    <value>Il existe plusieurs moyens de communiquer avec notre hôpital. Nos patients et visiteurs peuvent nous joindre par téléphone, par e-mail ou via notre site web.
+
+Numéro de téléphone : 123 456 789
+Adresse e-mail : akdag@hospital.com
+Notre site web : www.akdag.com
+
+De plus, l'adresse physique de notre hôpital est la suivante : İnönü Mah. Nizamiye Caddesi No:1-9, Şişli / İstanbul
+
+Nous serions ravis d'entendre les questions, préoccupations ou commentaires de nos patients et visiteurs. N'hésitez pas à nous contacter en utilisant les informations de contact fournies.</value>
   </data>
-  <data name="doktor" xml:space="preserve">
-    <value>Notre équipe médicale</value>
+  <data name="HospitalConnectionTitle" xml:space="preserve">
+    <value>Coordonnées de l'hôpital</value>
   </data>
-  <data name="ferda" xml:space="preserve">
-    <value>Ferda est connue pour son approche compréhensive envers ses patients et est heureuse de les soutenir tout au long du processus de traitement.</value>
+  <data name="HospitalDescription" xml:space="preserve">
+    <value>Notre hôpital est équipé des technologies médicales les plus modernes et propose une large gamme de services de santé, tels que les services d'urgence, les soins intensifs, la chirurgie, la médecine interne, la pédiatrie, et bien plus encore.
+
+Notre équipe de santé expérimentée et spécialisée est disponible 24 heures sur 24 pour fournir les meilleurs soins possibles à nos patients. Nous offrons des services tels que cafétéria, parking et Wi-Fi gratuit pour le confort de nos patients et visiteurs.
+
+Notre hôpital s'efforce de promouvoir l'excellence dans les soins aux patients et de continuellement améliorer les services de santé. La santé et le bien-être de nos patients sont toujours notre priorité.</value>
   </data>
-  <data name="home" xml:space="preserve">
-    <value>Page D'accueil</value>
+  <data name="HospitalDescriptionTitle" xml:space="preserve">
+    <value>Définition de l'hôpital</value>
   </data>
-  <data name="nazli" xml:space="preserve">
-    <value>Nazlı est une médecin connue pour ses connaissances médicales approfondies et sa capacité à faire preuve d'empathie avec ses patients.</value>
+  <data name="HospitalName" xml:space="preserve">
+    <value>Hôpital AKDAG</value>
+  </data>
+  <data name="OurDoctors" xml:space="preserve">
+    <value>Les médecins de notre hôpital ont une vaste expérience et connaissance dans diverses disciplines médicales. Chacun d'eux est dévoué à fournir les meilleurs soins possibles à nos patients. Nos médecins utilisent les dernières informations médicales et technologies pour comprendre les problèmes de santé de nos patients, établir des diagnostics précis et créer des plans de traitement efficaces.
+
+Nos médecins reconnaissent que chaque patient est unique et a des besoins de santé spécifiques. C'est pourquoi ils adoptent une approche individuelle pour chaque patient, créant des plans de soins personnalisés pour aider chaque patient à atteindre ses objectifs de santé.
+
+Nos médecins ont une profonde préoccupation pour la santé et le bien-être de nos patients, et ils s'efforcent continuellement de promouvoir l'excellence dans les services de santé pour nos patients.</value>
+  </data>
+  <data name="OurDoctorsTitle" xml:space="preserve">
+    <value>Nos médecins</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Accueillir</value>
+    <value>Bienvenue</value>
   </data>
 </root>

@@ -13,6 +13,26 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\Desk\\SAU_WORK\\WebProgramlama\\denek\\denek\\HospitalManagement\\wwwroot\\image\\Hastane1.jpg",
+      "PackagePath": "staticwebassets\\image\\Hastane1.jpg"
+    },
+    {
+      "Id": "D:\\Desk\\SAU_WORK\\WebProgramlama\\denek\\denek\\HospitalManagement\\wwwroot\\image\\Hastane2.jpg",
+      "PackagePath": "staticwebassets\\image\\Hastane2.jpg"
+    },
+    {
+      "Id": "D:\\Desk\\SAU_WORK\\WebProgramlama\\denek\\denek\\HospitalManagement\\wwwroot\\image\\Hastane3.jpg",
+      "PackagePath": "staticwebassets\\image\\Hastane3.jpg"
+    },
+    {
+      "Id": "D:\\Desk\\SAU_WORK\\WebProgramlama\\denek\\denek\\HospitalManagement\\wwwroot\\image\\Hastane4.jpg",
+      "PackagePath": "staticwebassets\\image\\Hastane4.jpg"
+    },
+    {
+      "Id": "D:\\Desk\\SAU_WORK\\WebProgramlama\\denek\\denek\\HospitalManagement\\wwwroot\\image\\OurDoctor1.png",
+      "PackagePath": "staticwebassets\\image\\OurDoctor1.png"
+    },
+    {
       "Id": "D:\\Desk\\SAU_WORK\\WebProgramlama\\denek\\denek\\HospitalManagement\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

@@ -1,0 +1,55 @@
+﻿@model Patient
+<h2>Hasta Ekleme Sayfasi</h2>
+
+<form method="post">
+
+
+	<div class="border p-3 mt-5">
+
+		<div class="row pb-3  form-group">
+			<h2 class="text-primary "><strong>Hasta Ekle</strong> </h2>
+			</hr>
+		</div>
+
+
+		<div class="mb-3  form-group"
+		<label asp-for="Name"></label>
+		<input asp-for="Name" class="form-control">
+		<span asp-validation-for="Name" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3  form-group"
+		<label asp-for=Surname></label>
+		<input asp-for="Surname" class="form-control">
+		<span asp-validation-for="Surname" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3  form-group">
+		<label asp-for=Telephone></label>
+			<input asp-for="Telephone" class="form-control">
+			<span asp-validation-for="Telephone" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3 form-group">
+		<label asp-for="Description"></label>
+			<input asp-for="Description" class="form-control">
+			<span asp-validation-for="Description" class="text-danger"></span>
+		</div>
+		
+		
+
+		<button type="submit" class="btn btn-outline-primary" style="width:250px">Hasta Ekle</button>
+
+		<a asp-controller="Patient" asp-action="Index" class="btn btn-outline-primary style="width:250px">
+			Hasta Listesine Dön
+
+		</a>
+
+	</div>
+
+
+
+
+
+
+</form>

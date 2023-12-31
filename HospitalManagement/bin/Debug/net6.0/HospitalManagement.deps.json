@@ -19,6 +19,17 @@
         },
         "runtime": {
           "HospitalManagement.dll": {}
+        },
+        "resources": {
+          "en-US/HospitalManagement.resources.dll": {
+            "locale": "en-US"
+          },
+          "fr-FR/HospitalManagement.resources.dll": {
+            "locale": "fr-FR"
+          },
+          "tr-TR/HospitalManagement.resources.dll": {
+            "locale": "tr-TR"
+          }
         }
       },
       "Azure.Core/1.25.0": {

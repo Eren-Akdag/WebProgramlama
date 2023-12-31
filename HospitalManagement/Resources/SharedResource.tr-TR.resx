@@ -117,20 +117,42 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="alivefa" xml:space="preserve">
-    <value>Bu doktorlar, alanlarında uzmanlık derecesine sahip deneyimli sağlık profesyonelleridir.</value>
+  <data name="HospitalConnection" xml:space="preserve">
+    <value>Hastanemizle iletişime geçmek için çeşitli yollar bulunmaktadır. Hastalarımız ve ziyaretçilerimiz, telefon, e-posta veya web sitemiz aracılığıyla bize ulaşabilirler.
+
+Telefon numaramız: 123 456 789
+E-posta adresimiz: akdag@hospital.com
+Web sitemiz: www.akdag.com
+
+Ayrıca, hastanemizin fiziksel adresi: İnönü Mah. Nizamiye Caddesi No:1-9, Şişli /İstanbul
+
+Hastalarımızın ve ziyaretçilerimizin sorularını, endişelerini veya geri bildirimlerini dinlemekten memnuniyet duyarız. İletişim bilgilerimizi kullanarak bize ulaşmaktan çekinmeyin.</value>
   </data>
-  <data name="doktor" xml:space="preserve">
-    <value>Doktor Kadromuz</value>
+  <data name="HospitalConnectionTitle" xml:space="preserve">
+    <value>Hastane İletişim Bilgileri</value>
   </data>
-  <data name="ferda" xml:space="preserve">
-    <value>Ferda, hastalarına karşı anlayışlı yaklaşımıyla bilinir ve tedavi sürecinde destek olmaktan mutluluk duyar.</value>
+  <data name="HospitalDescription" xml:space="preserve">
+    <value>Hastanemiz, modern tıbbi teknoloji ve ekipmanlarla donatılmıştır ve geniş bir yelpazede sağlık hizmetleri sunmaktadır. Acil servis, yoğun bakım, cerrahi hizmetler, dahiliye, pediatri ve daha birçok alanda hizmet veriyoruz.
+
+Deneyimli ve uzman sağlık ekibimiz, hastalarımıza en yüksek kalitede bakımı sağlamak için 24 saat hizmet vermektedir. Hastalarımızın ve ziyaretçilerimizin konforu için kafeterya, otopark ve ücretsiz Wi-Fi hizmeti sunmaktayız.
+
+Hastanemiz, hasta bakımında mükemmeliyeti teşvik etmek ve sağlık hizmetlerinde sürekli iyileştirme yapmak için çaba göstermektedir. Hastalarımızın sağlığı ve iyiliği her zaman önceliğimizdir.</value>
   </data>
-  <data name="home" xml:space="preserve">
-    <value>Ana Sayfa</value>
+  <data name="HospitalDescriptionTitle" xml:space="preserve">
+    <value>Hastane Tanımı</value>
   </data>
-  <data name="nazli" xml:space="preserve">
-    <value>Nazlı, kapsamlı tıbbi bilgisi ve hastalarıyla empati kurma becerisiyle tanınan bir doktordur.</value>
+  <data name="HospitalName" xml:space="preserve">
+    <value>AKDAG Hastanesi</value>
+  </data>
+  <data name="OurDoctors" xml:space="preserve">
+    <value>Hastanemizin doktorları, çeşitli tıbbi disiplinlerde geniş bir deneyime ve bilgiye sahiptir. Her biri, hastalarımıza en yüksek kalitede bakımı sağlamak için kendini adamıştır. Doktorlarımız, hastalarımızın sağlık sorunlarını anlamak, doğru teşhisleri koymak ve etkili tedavi planları oluşturmak için en son tıbbi bilgileri ve teknolojileri kullanır.
+
+Doktorlarımız, hastalarımızın her birinin benzersiz olduğunu ve her hastanın kendi özel sağlık ihtiyaçları olduğunu anlar. Bu nedenle, her hastaya bireysel olarak yaklaşır ve her hastanın sağlık hedeflerine ulaşmasına yardımcı olmak için kişiselleştirilmiş bir bakım planı oluşturur.
+
+Doktorlarımız, hastalarımızın sağlığı ve iyiliği konusunda derinden endişe duyar ve hastalarımızın sağlık hizmetlerinde mükemmeliyeti teşvik etmek için sürekli olarak çaba gösterir.</value>
+  </data>
+  <data name="OurDoctorsTitle" xml:space="preserve">
+    <value>Doktorlarımız</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Hoşgeldiniz</value>
