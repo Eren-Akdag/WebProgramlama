@@ -1,57 +1,33 @@
 ﻿@using HospitalManagement.Data;
 @model List<Appointment>
 
-<h1>Randevu Index</h1>
+<h1 class="text-center my-4 text-dark">Randevu Index</h1>
 
 @if (@TempData["basarili"] != null)
 {
-    <div class="alert alert-dismissible alert-success">
+    <div class="alert alert-dismissible alert-danger">
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
         <strong>Tebrikler!</strong> <a href="#" class="alert-link">@TempData["basarili"]</a>.
     </div>
 }
 
-<div class="row">
-    <div class="container">
-        <div class="row pt-3 pb-4">
-            <h3><strong>Randevu Listesi</strong></h3>
-        </div>
-
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>Id</th>
-                    <th>Hasta Adı</th>
-                    <th>Doktor Adı</th>
-                    <th>Polikinlik Adresi</th>
-                    <th>Randevu Tarihi</th>
-                    <th>Randevu Saati</th>
-                    <th>Açıklama</th>
-                    <th>@* guncelle *@</th>
-                    <th>@* sil *@</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var appointment in Model)
-                {
-                    <tr>
-                        <th>@appointment.Id</th>
-                        <th>@appointment.Patient.Name</th>
-                        <th>@appointment.Doctor.Name</th>
-                        <th>@appointment.Policlinic.Name</th>
-                        <th>@appointment.Dates</th>
-                        @*<th>@appointment.AppointmentTime</th>*@
-                        <th>@appointment.Description</th>
-                        <th>
-                            <a asp-controller="Appointment" asp-action="Update" asp-route-id=@appointment.Id class="btn btn-outline-success">Güncelle</a>
-                        </th>
-                        <th>
-                            <a asp-controller="Appointment" asp-action="Delete" asp-route-id="@appointment.Id" class="btn btn-outline-primary">Sİl</a>
-                        </th>
-                    </tr>
-                }
-            </tbody>
-        </table>
+<div class="container">
+    <div class="row">
+        @foreach (var appointment in Model)
+        {
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm border-dark">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">@appointment.Patient.Name</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">@appointment.Doctor.Name</h6>
+                        <p class="card-text">@appointment.Policlinic.Name</p>
+                        <p class="card-text">@appointment.Dates</p>
+                        <p class="card-text">@appointment.Description</p>
+                        <a asp-controller="Appointment" asp-action="Update" asp-route-id=@appointment.Id class="btn btn-outline-success">Güncelle</a>
+                        <a asp-controller="Appointment" asp-action="Delete" asp-route-id="@appointment.Id" class="btn btn-outline-dark">Sil</a>
+                    </div>
+                </div>
+            </div>
+        }
     </div>
 </div>
-

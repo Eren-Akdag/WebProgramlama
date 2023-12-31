@@ -1,52 +1,44 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model Doctor;
+
 @{
 }
 
-@model Doctor
-<h2>Doktor Sil Sayfasi</h2>
-
 <form method="post">
 
-	@* <input asp-for="DoktorId" hidden/> *@
+    <div class="border p-3 mt-5">
 
-	<div class="border p-3 mt-5">
-
-		<div class="row pb-3  form-group">
-			<h2 class="text-primary "><strong>Doktor Sil</strong> </h2>
-			</hr>
-		</div>
+        <div class="row pb-3 form-group">
+            <h2 class="text-dark"><strong>Doktor Sil</strong></h2>
+            </hr>
+        </div>
 
 
-		<div class="mb-3  form-group"
-		<label asp-for="Name"></label>
-		<input asp-for="Name"  disabled class="form-control">
-		</div>
+        <div class="mb-3 form-group">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" disabled class="form-control">
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
 
-		<div class="mb-3  form-group"
-		<label asp-for=Surname></label>
-		<input asp-for="Surname" disabled class="form-control">
-		</div>
+        <div class="mb-3 form-group">
+            <label asp-for=Surname></label>
+            <input asp-for="Surname" disabled class="form-control">
+            <span asp-validation-for="Surname" class="text-danger"></span>
+        </div>
 
-		<div class="mb-3 form-group"
-		<label asp-for="Department">Alan</label>
-		<input asp-for="Department" disabled class="form-control">
-		</div>
+        <div class="mb-3 form-group">
+            <label asp-for="Department">Alan</label>
+            <input asp-for="Department" disabled class="form-control">
+            <span asp-validation-for="Department" class="text-danger"></span>
+        </div>
 
-		<br />
+        <br />
 
-		<button type="submit" class="btn btn-outline-primary" style="width:250px">Doktor Sil</button>
+        <button type="submit" class="btn btn-dark" style="width:250px">Doktor Sil</button>
 
-		<a asp-controller="Doctor" asp-action="Index" class="btn btn-outline-primary style="width:250px">
-			Doktorlar Listesine Dön
-		</a>
+        <a asp-controller="Doctor" asp-action="Index" class="btn btn-outline-danger" style="width:250px">
+            Doktorlar Listesine Dön
+        </a>
 
-	</div>
-
-
-
-
-
+    </div>
 
 </form>

@@ -1,52 +1,35 @@
 ﻿@using HospitalManagement.Data;
 @model List<Policlinic>
 
+<h1 class="text-center my-4 text-dark">Polikinlikler</h1>
+
 @if (@TempData["basarili"] != null)
 {
-    <div class="alert alert-dismissible alert-success">
+    <div class="alert alert-dismissible alert-danger">
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
         <strong>Tebrikler!</strong> <a href="#" class="alert-link">@TempData["basarili"]</a>.
     </div>
 }
 
-<h1>Polikinlikler</h1>
+<div class="container">
+    <div class="row">
+        @foreach (var policlinic in Model)
+        {
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm border-dark">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">@policlinic.Name</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">@policlinic.Address</h6>
+                        <a asp-controller="Policlinic" asp-action="Update" asp-route-id=@policlinic.Id class="btn btn-outline-success">Güncelle</a>
+                        <a asp-controller="Policlinic" asp-action="Delete" asp-route-id="@policlinic.Id" class="btn btn-outline-dark">Sil</a>
+                        <a asp-controller="Policlinic" asp-action="Detail" asp-route-id="@policlinic.Id" class="btn btn-outline-info">Detay</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
 
-<table class="table table-bordered">
-    <tr>
-    <thead>
-    <th>Id</th>
-    <th>Polikinlik</th>
-    <th>Adres</th>
-    <th>@* guncelle *@</th>
-    <th>@* ekle *@</th>
-    <th>@* detay *@</th>
-    </thead>
-    <tbody>
-            @foreach (var policlinic in Model)
-            {
-            <tr>
-                <th>@policlinic.Id</th>
-                <th>@policlinic.Name</th>
-                <th>@policlinic.Address</th>
-                <th align="center" valign="middle">
-                    <a asp-controller="Policlinic" asp-action="Update" style="width:fit-content" asp-route-id=@policlinic.Id class="btn btn-outline-success">Güncelle</a>
-                </th>
-                <th align="center" valign="middle">
-                    <a asp-controller="Policlinic" asp-action="Delete" style="width:fit-content" asp-route-id="@policlinic.Id" class="btn btn-outline-primary">Sİl</a>
-                </th>
-                <th align="center" valign="middle">
-                    <a asp-controller="Policlinic" asp-action="Detail" style="width:fit-content" asp-route-id="@policlinic.Id" class="btn btn-outline-info">Detay</a>
-                </th>
-            </tr>
-            }
-    </tbody>
-    </tr>
-</table>
-
-<div class="row pt-3 pb-2">
-    <div>
-        <div class="d-grid gap-2">
-            <a asp-controller="Policlinic" asp-action="Add" class="btn btn-lg btn-outline-primary" type="button">Yeni Polikinlik Ekle</a>
-        </div>
+    <div class="d-grid gap-2 my-3">
+        <a asp-controller="Policlinic" asp-action="Add" class="btn btn-lg btn-dark">Yeni Polikinlik Ekle</a>
     </div>
 </div>

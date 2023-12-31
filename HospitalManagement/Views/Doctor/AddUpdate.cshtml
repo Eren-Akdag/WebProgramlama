@@ -1,70 +1,62 @@
 ﻿@model Doctor;
 
-@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
 @{
 }
 
 <form method="post" enctype="multipart/form-data">
-	<div class="row">
+    <div class="row">
 
-		<div class="col-10">
+        <div class="col-10">
 
-			<div class="border p-3 mt-5">
+            <div class="border p-3 mt-5">
 
-				<div class="row pb-3  form-group">
-					<h2 class="text-primary ">@(Model == null ? "Doktor Ekle" : "Doktor Güncelle")</h2>
-					</hr>
-				</div>
-
-
-				<div class="mb-3  form-group"
-				<label asp-for="Name"></label>
-				<input asp-for="Name" class="form-control">
-				<span asp-validation-for="Name" class="text-danger"></span>
-				</div>
-
-				<div class="mb-3  form-group"
-				<label asp-for=Surname></label>
-				<input asp-for="Surname" class="form-control">
-				<span asp-validation-for="Surname" class="text-danger"></span>
-				</div>
-
-				<div class="mb-3 form-group"
-				<label asp-for="Department">Alan</label>
-				<input asp-for="Department" class="form-control">
-				<span asp-validation-for="Department" class="text-danger"></span>
-				</div>
-
-				<br />
-
-				<br />
-
-				@if (Model != null)
-				{
-				//guncelle
-					<button type="submit" class="btn btn-outline-primary" style="width:250px">Doktor Guncelle</button>
-				}
-				else
-				{
-				//ekle
-					<button type="submit" class="btn btn-outline-primary" style="width:250px">Doktor Ekle</button>
-
-				}
-				<a asp-controller="Doctor" asp-action="Index" class="btn btn-outline-primary style="width:250px">
-					Doktorlar Listesine Dön
-
-				</a>
-
-			</div>
+                <div class="row pb-3 form-group">
+                    <h2 class="text-dark">@(Model == null ? "Doktor Ekle" : "Doktor Güncelle")</h2>
+                    </hr>
+                </div>
 
 
-		</div>
-		<div class="col-2">
+                <div class="mb-3 form-group">
+                    <label asp-for="Name"></label>
+                    <input asp-for="Name" class="form-control">
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
 
-		</div>
+                <div class="mb-3 form-group">
+                    <label asp-for=Surname></label>
+                    <input asp-for="Surname" class="form-control">
+                    <span asp-validation-for="Surname" class="text-danger"></span>
+                </div>
 
-	</div>
+                <div class="mb-3 form-group">
+                    <label asp-for="Department">Alan</label>
+                    <input asp-for="Department" class="form-control">
+                    <span asp-validation-for="Department" class="text-danger"></span>
+                </div>
+
+                <br />
+
+                <br />
+
+                @if (Model != null)
+                {
+                    <button type="submit" class="btn btn-dark" style="width:250px">Doktor Güncelle</button>
+                }
+                else
+                {
+                    <button type="submit" class="btn btn-dark" style="width:250px">Doktor Ekle</button>
+                }
+                <a asp-controller="Doctor" asp-action="Index" class="btn btn-outline-danger" style="width:250px">
+                    Doktorlar Listesine Dön
+                </a>
+
+            </div>
+
+
+        </div>
+        <div class="col-2">
+        </div>
+
+    </div>
 
 </form>

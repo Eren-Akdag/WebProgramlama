@@ -1,17 +1,14 @@
-﻿@model HospitalManagement.Models.Appointment
-
+﻿@model HospitalManagement.Models.Appointment;
 
 @{
     ViewData["Title"] = "Guncelle";
 }
 
-<h1>Guncelle</h1>
+<h1 class="text-center my-4 text-dark">Randevu Güncelle</h1>
 
-<h4>Randevu</h4>
-<hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Guncelle">
+        <form asp-action="Update">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
@@ -24,47 +21,44 @@
                 <input asp-for="Description" class="form-control" />
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
-           
+
             <div class="form-group">
                 <label asp-for="PatientId" class="p-0">Hastalar</label>
                 <select asp-for="PatientId" asp-items="ViewBag.PatientList" name="PatientId" class="form-select">
                 </select>
             </div>
-            @*  Doktorlari CEKİYORUZ  *@
             <div class="form-group">
-
                 <label asp-for="DoctorId" class="p-0">Doktorlar</label>
                 <select id="DoctorList" asp-for="DoctorId" asp-items="ViewBag.DoctorList" name="DoctorId" class="form-select">
                     <option>Doktor Seçiniz</option>
                 </select>
-
             </div>
             <div class="form-group">
-                <label asp-for="AppointmentTime" class="p-0">AppointmentTime</label>
+                <label asp-for="AppointmentTime" class="p-0">Randevu Saati</label>
                 <select id="StateList" asp-for="AppointmentTime" class="form-select">
-                    <option value="-1">Calisma Saati</option>
+                    <option value="-1">Çalışma Saati Seçiniz</option>
                 </select>
-
             </div>
-            @*  Polikinlikleri CEKİYORUZ  *@
             <div class="form-group">
                 <label asp-for="PoliclinicId" class="p-0">Polikinlik</label>
                 <select asp-for="PoliclinicId" asp-items="ViewBag.PoliclinicList" class="disabled" class="form-select">
                 </select>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn btn-dark" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-controller="Appointment" asp-action="Index" class="btn btn-outline-primary style="width:250px">
-        Randuvular Listesi
+    <a asp-controller="Appointment" asp-action="Index" class="btn btn-outline-dark" style="width:250px">
+        Randevular Listesi
     </a>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

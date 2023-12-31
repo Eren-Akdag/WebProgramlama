@@ -1,109 +1,93 @@
-﻿@model Appointment
-<h2>Randevu Silme Sayfasi</h2>
+﻿@model Appointment;
 
+@{
+    ViewData["Title"] = "Sil";
+}
 
+<h1 class="text-center my-4 text-dark">Randevu Sil</h1>
 
-<form method="post">
-
-
-	<div class="border p-3 mt-5">
-
-
+<div class="row">
+    <div class="col-md-4">
         <form asp-action="Guncelle">
-
-
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
                 <label asp-for="Dates" class="control-label"></label>
                 <input asp-for="Dates" disabled class="form-control" />
             </div>
-
             <div class="form-group">
                 <label asp-for="Description" class="control-label"></label>
                 <input asp-for="Description" disabled class="form-control" />
             </div>
-
-
             <div class="form-group">
                 <label asp-for="PatientId" class="p-0">Hastalar</label>
                 <select asp-for="PatientId" asp-items="ViewBag.PatientList" name="PatientId" disabled class="form-select">
                 </select>
             </div>
-
-            @*  Doktorlari CEKİYORUZ  *@
             <div class="form-group">
-
                 <label asp-for="DoctorId" class="p-0">Doktorlar</label>
                 <select id="DoctorList" asp-for="DoctorId" asp-items="ViewBag.DoctorList" name="DoctorId" disabled class="form-select">
                     <option>Doktor Seçiniz</option>
                 </select>
-
             </div>
-
             <div class="form-group">
-                <label asp-for="AppointmentTime" class="p-0">RandevuSaati</label>
+                <label asp-for="AppointmentTime" class="p-0">Randevu Saati</label>
                 <select id="StateList" asp-for="AppointmentTime" disabled class="form-select">
-                    <option value="-1">Calisma Saati</option>
+                    <option value="-1">Çalışma Saati Seçiniz</option>
                 </select>
-
             </div>
-
-            @*  Polikinlikleri CEKİYORUZ  *@
             <div class="form-group">
                 <label asp-for="PoliclinicId" class="p-0">Polikinlik</label>
                 <select asp-for="PoliclinicId" asp-items="ViewBag.PoliclinicList" disabled class="form-select">
                 </select>
             </div>
-
-         
+            <div class="form-group">
+                <input type="submit" value="Sil" class="btn btn-danger" />
+            </div>
         </form>
+    </div>
+</div>
 
+<div>
+    <a asp-controller="Appointment" asp-action="Index" class="btn btn-outline-dark" style="width:250px">
+        Randevular Listesi
+    </a>
+</div>
 
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script type="text/javascript">
+        $(document).ready(function () {
 
-		<button type="submit" class="btn btn-outline-primary" style="width:250px">Randevu Sil</button>
+            $('#DoctorList').change(function () {
+                var doktorId = $(this).val();
+                $.ajax({
+                    url: '/Appointment/LoadState',
+                    type: 'GET',
+                    data: { doktorId: doktorId },
+                    success: function (result) {
+                        var saatListesi = $('#StateList');
 
-		<a asp-controller="Appointment" asp-action="Index" class="btn btn-outline-primary style="width:250px">
-			Randuvular Listesi
-		</a>
+                        saatListesi.empty();
+                        saatListesi.append($('<option></option>').val("-1").text("Çalışma Saati Seçiniz"));
 
-	</div>
+                        $.each(result, function (index, item) {
+                            saatListesi.append($('<option></option>').val(item.times).text(item.times));
+                        });
+                    },
+                    error: function () {
+                        console.error('İstek başarısız oldu.');
+                    }
+                });
+            });
 
-</form>
-@section Scripts
-	{
-
-	<script type="text/javascript">
-		$(document).ready(function () {
-
-			$('#DoctorList').change(function () {
-				var doktorId = $(this).val();
-				$.ajax({
-					url: '/Randevu/LoadState',
-					type: 'GET',
-					data: { doktorId: doktorId }, // Değişken adını düzelt
-					success: function (result) {
-						var saatListesi = $('#StateList'); // Calisma Saati dropdown listesi
-
-						saatListesi.empty(); // Önceki içeriği temizle
-						saatListesi.append($('<option></option>').val(item.saat).text(item.saat));
-
-						$.each(result, function (index, item) {
-							saatListesi.append($('<option></option>').val(item.saat).text(item.saat));
-						});
-					},
-					error: function () {
-						console.error('İstek başarısız oldu.');
-					}
-				});
-			});
-
-
-		});
-	</script>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script>
-		var today = new Date().toISOString().split('T')[0];
-		document.getElementById("Tarih").min = today;
-	</script>
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        var today = new Date().toISOString().split('T')[0];
+        document.getElementById("Tarih").min = today;
+    </script>
 }
