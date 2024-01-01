@@ -117,6 +117,30 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Answer1" xml:space="preserve">
+    <value>Cevap 1: Hastanemiz haftanın 7 günü, 24 saat hizmet vermektedir.</value>
+  </data>
+  <data name="Answer2" xml:space="preserve">
+    <value>Cevap 2: Acil servisimiz, tıbbi acil durumlar için 24 saat hizmet vermektedir.</value>
+  </data>
+  <data name="Answer3" xml:space="preserve">
+    <value>Cevap 3: Randevular, hastanemizin web sitesi üzerinden veya telefonla alınabilir.</value>
+  </data>
+  <data name="Answer4" xml:space="preserve">
+    <value>Cevap 4: Hastanemizde çeşitli uzmanlık alanlarından doktorlar bulunmaktadır. İhtiyacınıza göre uygun doktoru seçebilirsiniz.</value>
+  </data>
+  <data name="Answer5" xml:space="preserve">
+    <value>Cevap 5: Hastanemiz, genel cerrahi, dahiliye, pediatri, kadın doğum, ortopedi ve daha birçok alanda hizmet vermektedir.</value>
+  </data>
+  <data name="Answer6" xml:space="preserve">
+    <value>Cevap 6: Evet, hastanemizin otoparkı bulunmaktadır.</value>
+  </data>
+  <data name="Answer7" xml:space="preserve">
+    <value>Cevap 7: Evet, hastanemiz bünyesinde 24 saat hizmet veren bir eczane bulunmaktadır.</value>
+  </data>
+  <data name="Answer8" xml:space="preserve">
+    <value>Cevap 8: Evet, hastanemizde yatış imkanı bulunmaktadır. İlgili bölümle iletişime geçerek daha fazla bilgi alabilirsiniz.</value>
+  </data>
   <data name="HospitalConnection" xml:space="preserve">
     <value>Hastanemizle iletişime geçmek için çeşitli yollar bulunmaktadır. Hastalarımız ve ziyaretçilerimiz, telefon, e-posta veya web sitemiz aracılığıyla bize ulaşabilirler.
 
@@ -153,6 +177,30 @@ Doktorlarımız, hastalarımızın sağlığı ve iyiliği konusunda derinden en
   </data>
   <data name="OurDoctorsTitle" xml:space="preserve">
     <value>Doktorlarımız</value>
+  </data>
+  <data name="Question1" xml:space="preserve">
+    <value>Soru 1: Hastane çalışma saatleri nelerdir?</value>
+  </data>
+  <data name="Question2" xml:space="preserve">
+    <value>Soru 2: Acil servis hizmetleri nelerdir?</value>
+  </data>
+  <data name="Question3" xml:space="preserve">
+    <value>Soru 3: Randevu nasıl alabilirim?</value>
+  </data>
+  <data name="Question4" xml:space="preserve">
+    <value>Soru 4: Hangi doktorlara başvurabilirim?</value>
+  </data>
+  <data name="Question5" xml:space="preserve">
+    <value>Soru 5: Hastanenizde hangi tıbbi hizmetler sunulmaktadır?</value>
+  </data>
+  <data name="Question6" xml:space="preserve">
+    <value>Soru 6: Hastanenizde otopark hizmeti var mı?</value>
+  </data>
+  <data name="Question7" xml:space="preserve">
+    <value>Soru 7: Hastanenizde eczane hizmeti var mı?</value>
+  </data>
+  <data name="Question8" xml:space="preserve">
+    <value>Soru 8: Hastanenizde yatış imkanı var mı?</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Hoşgeldiniz</value>

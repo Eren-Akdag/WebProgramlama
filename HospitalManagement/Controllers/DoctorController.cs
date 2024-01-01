@@ -20,7 +20,7 @@ namespace HospitalManagement.Controllers
             _webHostEnvironment = webHostEnvironment;
         }
 
-        //[Authorize(Roles = "Admin,Patient")]
+        [Authorize(Roles = "Admin,Patient")]
         public IActionResult Index()
         {
             List<Doctor> objDoktorList = _doctorRepo.GetAll().ToList();
@@ -31,7 +31,7 @@ namespace HospitalManagement.Controllers
             return View(objDoktorList);
         }
 
-        //[Authorize(Roles = UserRole.AdminRole)]
+        [Authorize(Roles = UserRole.AdminRole)]
         public IActionResult AddUpdate(int? id)
         {
             //comboox hasta id seçiliyo
@@ -61,23 +61,13 @@ namespace HospitalManagement.Controllers
 
         }
 
-        //[Authorize(Roles = UserRole.AdminRole)]
+        [Authorize(Roles = UserRole.AdminRole)]
         [HttpPost]
         public IActionResult AddUpdate(Doctor doctor, IFormFile? file)
         {
             if (ModelState.IsValid)
             {
-                //string wwRootPath = _webHostEnvironment.WebRootPath;
-                //string doktorPath = Path.Combine(wwRootPath, @"img");
-                //if (file != null)
-                //{
-
-                //    using (var fileStream = new FileStream(Path.Combine(doktorPath, file.FileName), FileMode.Create))
-                //    {
-                //        file.CopyTo(fileStream);
-                //    }
-                //    doctor.ResimURL = @"\img\" + file.FileName;
-                //}
+                
 
                 if (doctor.Id == 0)
                 {
@@ -123,7 +113,7 @@ namespace HospitalManagement.Controllers
             return RedirectToAction("Index");//listele
         }
 
-        //[Authorize(Roles = UserRole.AdminRole)]
+        [Authorize(Roles = UserRole.AdminRole)]
         public IActionResult Delete(int? id)//index.cshtml asp-route-id=@doktor.Id ile id degeri alıyoruz
         {
             if (id == null || id == 0)
@@ -138,7 +128,7 @@ namespace HospitalManagement.Controllers
             return View(doctorVt);//doktorVt nesnemizi view'e gönderdik
         }
 
-        //[Authorize(Roles = UserRole.AdminRole)]
+        [Authorize(Roles = UserRole.AdminRole)]
         [HttpPost, ActionName("Delete")]
         public IActionResult DeletePOST(int? id)
         {

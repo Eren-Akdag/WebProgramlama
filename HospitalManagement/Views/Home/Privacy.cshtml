@@ -3,4 +3,159 @@
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sıkça Sorulan Sorular</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .faq-header {
+            padding: 10px 15px;
+            margin-bottom: 20px;
+            color: #fff;
+            background-color: #5c5757;
+            border-radius: 3px;
+        }
+
+        .faq-body {
+            padding: 15px;
+            margin-bottom: 20px;
+            color: #212529;
+            background-color: #f7f7f7;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-3">
+        <h2>Sıkça Sorulan Sorular</h2>
+        <div id="accordion">
+            <!-- Soru 1 -->
+            <div class="card">
+                <div class="card-header faq-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link text-white" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            @_localization.Getkey("Question1")
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show faq-body" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        @_localization.Getkey("Answer1")
+                    </div>
+                </div>
+            </div>
+            <!-- Soru 2 -->
+            <div class="card">
+                <div class="card-header faq-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link text-white" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            @_localization.Getkey("Question2")
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse faq-body" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                           @_localization.Getkey("Answer2")
+                    </div>
+                </div>
+            </div>
+            <!-- Soru 3 -->
+            <div class="card">
+                <div class="card-header faq-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link text-white" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseThree">
+                            @_localization.Getkey("Question3")
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse faq-body" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        @_localization.Getkey("Answer3")
+                    </div>
+                </div>
+            </div>
+            <!-- Soru 4 -->
+            <div class="card">
+                <div class="card-header faq-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link text-white" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            @_localization.Getkey("Question4")
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse faq-body" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                        @_localization.Getkey("Answer4")
+                    </div>
+                </div>
+            </div>
+            <!-- Soru 5 -->
+            <div class="card">
+                <div class="card-header faq-header" id="headingFive">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link text-white" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                            @_localization.Getkey("Question5")
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFive" class="collapse faq-body" aria-labelledby="headingFive" data-parent="#accordion">
+                    <div class="card-body">
+                        @_localization.Getkey("Answer5")
+                    </div>
+                </div>
+            </div>
+            <!-- Soru 6 -->
+            <div class="card">
+                <div class="card-header faq-header" id="headingSix">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link text-white" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                            @_localization.Getkey("Question6")
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseSix" class="collapse faq-body" aria-labelledby="headingSix" data-parent="#accordion">
+                    <div class="card-body">
+                        @_localization.Getkey("Answer6")
+                    </div>
+                </div>
+            </div>
+            <!-- Soru 7 -->
+            <div class="card">
+                <div class="card-header faq-header" id="headingSeven">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link text-white" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                            @_localization.Getkey("Question7")
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseSeven" class="collapse faq-body" aria-labelledby="headingSeven" data-parent="#accordion">
+                    <div class="card-body">
+                        @_localization.Getkey("Answer7")
+                    </div>
+                </div>
+            </div>
+            <!-- Soru 8 -->
+            <div class="card">
+                <div class="card-header faq-header" id="headingEight">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link text-white" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                            @_localization.Getkey("Question8")
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseEight" class="collapse faq-body" aria-labelledby="headingEight" data-parent="#accordion">
+                    <div class="card-body">
+                        @_localization.Getkey("Answer8")
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-5"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+

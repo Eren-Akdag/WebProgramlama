@@ -117,6 +117,30 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Answer1" xml:space="preserve">
+    <value>Réponse 1 : Notre hôpital offre un service 24 heures sur 24, 7 jours sur 7.</value>
+  </data>
+  <data name="Answer2" xml:space="preserve">
+    <value>Réponse 2 : Notre service d'urgence est disponible 24 heures sur 24 pour les urgences médicales.</value>
+  </data>
+  <data name="Answer3" xml:space="preserve">
+    <value>Réponse 3 : Les rendez-vous peuvent être pris via le site Internet de notre hôpital ou par téléphone.</value>
+  </data>
+  <data name="Answer4" xml:space="preserve">
+    <value>Réponse 4 : Il y a des médecins de diverses spécialités dans notre hôpital. Vous pouvez choisir le médecin approprié en fonction de vos besoins.</value>
+  </data>
+  <data name="Answer5" xml:space="preserve">
+    <value>Réponse 5 : Notre hôpital offre des services en chirurgie générale, médecine interne, pédiatrie, gynécologie, orthopédie et bien d'autres domaines.</value>
+  </data>
+  <data name="Answer6" xml:space="preserve">
+    <value>Réponse 6 : Oui, notre hôpital dispose d'un parking.</value>
+  </data>
+  <data name="Answer7" xml:space="preserve">
+    <value>Réponse 7 : Oui, il y a une pharmacie ouverte 24h/24 au sein de notre hôpital.</value>
+  </data>
+  <data name="Answer8" xml:space="preserve">
+    <value>Réponse 8 : Oui, il existe une possibilité d'hospitalisation dans notre hôpital. Vous pouvez obtenir plus d’informations en contactant le service concerné.</value>
+  </data>
   <data name="HospitalConnection" xml:space="preserve">
     <value>Il existe plusieurs moyens de communiquer avec notre hôpital. Nos patients et visiteurs peuvent nous joindre par téléphone, par e-mail ou via notre site web.
 
@@ -153,6 +177,30 @@ Nos médecins ont une profonde préoccupation pour la santé et le bien-être de
   </data>
   <data name="OurDoctorsTitle" xml:space="preserve">
     <value>Nos médecins</value>
+  </data>
+  <data name="Question1" xml:space="preserve">
+    <value>Question 1 : Quels sont les horaires d’ouverture de l’hôpital ?</value>
+  </data>
+  <data name="Question2" xml:space="preserve">
+    <value>Question 2 : Que sont les services d'urgence ?</value>
+  </data>
+  <data name="Question3" xml:space="preserve">
+    <value>Question 3 : Comment puis-je prendre rendez-vous ?</value>
+  </data>
+  <data name="Question4" xml:space="preserve">
+    <value>Question 4 : Quels médecins puis-je consulter ?</value>
+  </data>
+  <data name="Question5" xml:space="preserve">
+    <value>Question 5 : Quels services médicaux sont offerts dans votre hôpital ?</value>
+  </data>
+  <data name="Question6" xml:space="preserve">
+    <value>Question 6 : Votre hôpital dispose-t-il de parkings ?</value>
+  </data>
+  <data name="Question7" xml:space="preserve">
+    <value>Question 7 : Votre hôpital dispose-t-il de services de pharmacie ?</value>
+  </data>
+  <data name="Question8" xml:space="preserve">
+    <value>Question 8 : Y a-t-il une possibilité d'hospitalisation dans votre hôpital ?</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Bienvenue</value>

@@ -13,7 +13,8 @@ namespace HospitalManagement
 {
     public class Program
     {
-        public static void Main(string[] args)
+        //public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -101,6 +102,23 @@ namespace HospitalManagement
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
             app.MapRazorPages();
+
+            // Create a new scope to retrieve scoped services
+            using (var scope = app.Services.CreateScope())
+            {
+                // Create roles
+                var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+                string[] roleNames = { "Admin", "Patient" }; // Oluþturmak istediðiniz rolleri buraya ekleyin
+                foreach (var roleName in roleNames)
+                {
+                    var roleExist = await roleManager.RoleExistsAsync(roleName);
+                    if (!roleExist)
+                    {
+                        // Rol yoksa oluþtur
+                        await roleManager.CreateAsync(new IdentityRole(roleName));
+                    }
+                }
+            }
 
             app.Run();
         }

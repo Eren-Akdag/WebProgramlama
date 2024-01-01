@@ -117,6 +117,30 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Answer1" xml:space="preserve">
+    <value>Answer 1: Our hospital provides service 24 hours a day, 7 days a week.</value>
+  </data>
+  <data name="Answer2" xml:space="preserve">
+    <value>Answer 2: Our emergency service is available 24 hours a day for medical emergencies.</value>
+  </data>
+  <data name="Answer3" xml:space="preserve">
+    <value>Answer 3: Appointments can be made via our hospital's website or by phone.</value>
+  </data>
+  <data name="Answer4" xml:space="preserve">
+    <value>Answer 4: There are doctors from various specialties in our hospital. You can choose the appropriate doctor according to your needs.</value>
+  </data>
+  <data name="Answer5" xml:space="preserve">
+    <value>Answer 5: Our hospital provides services in general surgery, internal medicine, pediatrics, gynecology, orthopedics and many other fields.</value>
+  </data>
+  <data name="Answer6" xml:space="preserve">
+    <value>Answer 6: Yes, our hospital has a parking lot.</value>
+  </data>
+  <data name="Answer7" xml:space="preserve">
+    <value>Answer 7: Yes, there is a 24-hour pharmacy within our hospital.</value>
+  </data>
+  <data name="Answer8" xml:space="preserve">
+    <value>Answer 8: Yes, there is an opportunity for hospitalization in our hospital. You can get more information by contacting the relevant department.</value>
+  </data>
   <data name="HospitalConnection" xml:space="preserve">
     <value>There are various ways to contact our hospital. Patients and visitors can reach us by phone, email, or through our website.
 
@@ -153,6 +177,30 @@ Our doctors deeply care about the health and well-being of our patients and cont
   </data>
   <data name="OurDoctorsTitle" xml:space="preserve">
     <value>Our doctors</value>
+  </data>
+  <data name="Question1" xml:space="preserve">
+    <value>Question 1: What are the hospital working hours?</value>
+  </data>
+  <data name="Question2" xml:space="preserve">
+    <value>Question 2: What are emergency services?</value>
+  </data>
+  <data name="Question3" xml:space="preserve">
+    <value>Question 3: How can I make an appointment?</value>
+  </data>
+  <data name="Question4" xml:space="preserve">
+    <value>Question 4: Which doctors can I consult?</value>
+  </data>
+  <data name="Question5" xml:space="preserve">
+    <value>Question 5: What medical services are offered at your hospital?</value>
+  </data>
+  <data name="Question6" xml:space="preserve">
+    <value>Question 6: Does your hospital have parking facilities?</value>
+  </data>
+  <data name="Question7" xml:space="preserve">
+    <value>Question 7: Does your hospital have pharmacy services?</value>
+  </data>
+  <data name="Question8" xml:space="preserve">
+    <value>Question 8: Is there any possibility of hospitalization in your hospital?</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Welcome </value>
