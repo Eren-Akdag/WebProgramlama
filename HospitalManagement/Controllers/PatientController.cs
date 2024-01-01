@@ -1,4 +1,5 @@
-﻿using HospitalManagement.Models;
+﻿// HospitalManagement.Models, Microsoft.AspNetCore.Authorization ve Microsoft.AspNetCore.Mvc isim alanlarını kullanıyoruz.
+using HospitalManagement.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,100 +7,140 @@ namespace HospitalManagement.Controllers
 {
 	public class PatientController : Controller
 	{
+        
+        // IPatientRepo tipinde bir özel alan tanımlanmıştır.
+        private readonly IPatientRepo _patientRepo;
 
-		private readonly IPatientRepo _patientRepo;
-
-		public PatientController(IPatientRepo context)
-		{
-
+        // Yapıcı metot ile IPatientRepo tipindeki nesne enjekte edilmiştir.
+        public PatientController(IPatientRepo context)
+        {
             _patientRepo = context;
-		}
-		//[Authorize(Roles = "Admin,Patient")]
-		public IActionResult Index()
-		{
-			List<Patient> objPatientList = _patientRepo.GetAll().ToList();//veritabanına _uygulamadbcontex ile baglanıp doktorlar listesi alıyoruz.
-			return View(objPatientList);//view'ev Hasta Listesi gönderiyoruz.
-		}
+        }
+
+        // "Admin" ve "Patient" rollerine sahip kullanıcıların erişimine açık bir işlem.
+        [Authorize(Roles = "Admin,Patient")]
+        public IActionResult Index()
+        {
+            // Hastaların listesini alıyoruz ve bu listeyi görünüme gönderiyoruz.
+            List<Patient> objPatientList = _patientRepo.GetAll().ToList();
+            return View(objPatientList);
+        }
+
+        // "Admin" rolüne sahip kullanıcıların erişimine açık bir işlem.
+        [Authorize(Roles = "Admin")]
+        public IActionResult Add()
+        {
+            // View'ı döndürüyoruz.
+            return View();
+        }
+
+        // HTTP POST metodu ile yeni bir hasta eklemek için bir işlem.
+        [Authorize(Roles = "Admin")]
+        [HttpPost]
+        public IActionResult Add(Patient patient)
+        {
+            // Model durumunun geçerli olup olmadığını kontrol ediyoruz.
+            if (ModelState.IsValid)
+            {
+                // Hastayı ekliyoruz ve değişiklikleri kaydediyoruz.
+                _patientRepo.Add(patient);
+                _patientRepo.Save();
+
+                // Başarılı mesajını TempData'ya ekliyoruz.
+                TempData["basarili"] = "Yeni hasta listeye başarıyla eklendi.";
+
+                // Index metoduna yönlendiriyoruz.
+                return RedirectToAction("Index");
+            }
+
+            // Model durumu geçerli değilse, View'ı döndürüyoruz.
+            return View();
+        }
+
+        // "Admin" rolüne sahip kullanıcıların erişimine açık bir işlem.
+        [Authorize(Roles = "Admin")]
+        public IActionResult Update(int? id)
+        {
+            // Eğer id null veya 0 ise, NotFound() döndürülür.
+            if (id == null || id == 0)
+            {
+                return NotFound();
+            }
+
+            // Hastayı id'ye göre alıyoruz.
+            Patient? patientVT = _patientRepo.Get(u => u.Id == id);
+            if (patientVT == null)
+            {
+                return NotFound();
+            }
+
+            // Hastayı görünüme gönderiyoruz.
+            return View(patientVT);
+        }
 
 
-		//[Authorize(Roles = "Admin")]
-		public IActionResult Add()
-		{
-			return View();
-		}
+        // HTTP POST metodu ile belirli bir hasta için güncelleme işlemi.
+        [HttpPost]
+        public IActionResult Update(Patient patient)
+        {
+            // Model durumunun geçerli olup olmadığını kontrol ediyoruz.
+            if (ModelState.IsValid)
+            {
+                // Hastayı güncelliyoruz ve değişiklikleri kaydediyoruz.
+                _patientRepo.Update(patient);
+                _patientRepo.Save();
 
-		//formdan verileri http post ile alıyoruz ve buraya veriler geliyor
-		//veriler Doktor turunden nesne
-		//[Authorize(Roles = "Admin")]
-		[HttpPost]
-		public IActionResult Add(Patient patient)
-		{
-			if (ModelState.IsValid)
-			{
-				_patientRepo.Add(patient);//ekleme
-				_patientRepo.Save();//kaydetme
-				TempData["basarili"] = "yeni hasta listeye başarıyla eklendi.";//kullanıcı mesaj
-				return RedirectToAction("Index");//Listele geri donuyor.
+                // Başarılı mesajını TempData'ya ekliyoruz.
+                TempData["basarili"] = "Güncelleme işlemi başarılı.";
 
-			}
-			return View();
+                // Index metoduna yönlendiriyoruz.
+                return RedirectToAction("Index");
+            }
 
-		}
+            // Model durumu geçerli değilse, View'ı döndürüyoruz.
+            return View();
+        }
 
-		//[Authorize(Roles = "Admin")]
-		public IActionResult Update(int? id)
-		{
-			if (id == null || id == 0)
-			{
-				return NotFound();
-			}
-			Patient? patientVT = _patientRepo.Get(u => u.Id == id);//uygulamadbcontex veri tabanina gidip doktorlar tablosundan id degerine göre buluyor
-			if (patientVT == null)
-			{
-				return NotFound();
-			}
-			return View(patientVT);//doktorVt nesnemizi view'e gönderdik
-		}
+        // "Admin" rolüne sahip kullanıcıların erişimine açık bir işlem.
+        [Authorize(Roles = "Admin")]
+        public IActionResult Delete(int? id)
+        {
+            // Eğer id null veya 0 ise, NotFound() döndürülür.
+            if (id == null || id == 0)
+            {
+                return NotFound();
+            }
 
-		[HttpPost]
-		public IActionResult Update(Patient patient)
-		{
-			if (ModelState.IsValid)
-			{
-				_patientRepo.Update(patient);
-				_patientRepo.Save();
-				TempData["basarili"] = "Güncelleme işlemi başarılı.";
-				return RedirectToAction("Index");
-			}
-			return View();
-		}
-		//[Authorize(Roles = "Admin")]
-		public IActionResult Delete(int? id)//index.cshtml asp-route-id=@doktor.Id ile id degeri alıyoruz
-		{
-			if (id == null || id == 0)
-			{
-				return NotFound();
-			}
-			Patient? patientVT = _patientRepo.Get(u => u.Id == id);//uygulamadbcontex veri tabanina gidip doktorlar tablosundan id degerine göre buluyor
-			if (patientVT == null)
-			{
-				return NotFound();
-			}
-			return View(patientVT);//doktorVt nesnemizi view'e gönderdik
-		}
-		//[Authorize(Roles = "Admin")]
-		[HttpPost, ActionName("Delete")]
-		public IActionResult DeletePOST(int? id)
-		{
-			Patient? patient = _patientRepo.Get(u => u.Id == id);
-			if (patient == null) { return NotFound(); }
-            _patientRepo.Delete(patient);//sil
-            _patientRepo.Save();//kaydet
-			TempData["basarili"] = "Silme işlemi başarılı.";//kullaniciya mesaj
-			return RedirectToAction("Index");//listele
-		}
+            // Hastayı id'ye göre alıyoruz.
+            Patient? patientVT = _patientRepo.Get(u => u.Id == id);
+            if (patientVT == null)
+            {
+                return NotFound();
+            }
 
+            // Hastayı görünüme gönderiyoruz.
+            return View(patientVT);
+        }
 
+        // "Admin" rolüne sahip kullanıcıların erişimine açık bir işlem.
+        [Authorize(Roles = "Admin")]
+        [HttpPost, ActionName("Delete")]
+        public IActionResult DeletePOST(int? id)
+        {
+            // Hastayı id'ye göre alıyoruz.
+            Patient? patient = _patientRepo.Get(u => u.Id == id);
+            if (patient == null) { return NotFound(); }
 
-	}
+            // Hastayı silip değişiklikleri kaydediyoruz.
+            _patientRepo.Delete(patient);
+            _patientRepo.Save();
+
+            // Başarılı mesajını TempData'ya ekliyoruz.
+            TempData["basarili"] = "Silme işlemi başarılı.";
+
+            // Index metoduna yönlendiriyoruz.
+            return RedirectToAction("Index");
+        }
+
+    }
 }

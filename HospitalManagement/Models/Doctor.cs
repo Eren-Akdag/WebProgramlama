@@ -1,27 +1,30 @@
-﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+﻿// Kullanılan kütüphaneler ve modüller
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 
+// HospitalManagement.Models ad alanı (namespace) içindeki sınıflar
 namespace HospitalManagement.Models
 {
+    // Doktor bilgilerini tutan Doctor sınıfı
     public class Doctor
     {
-        public int Id { get; set; }
-        [Required]
-        public string Name { get; set; }
-        [Required]
-        public string Surname { get; set; }
+        public int Id { get; set; } // Doktorun benzersiz kimliği
 
-        [Required(ErrorMessage = "Doctor Field Cannot Be Left Blank.")]
-        [MaxLength(25)]
-        [DisplayName("Doctor Department")]
-        public string Department { get; set; }//acılır pencere ile hasta secebilsin
+        [Required] // Bu alanın zorunlu olduğunu belirtir
+        public string Name { get; set; } // Doktorun adı
 
+        [Required] // Bu alanın zorunlu olduğunu belirtir
+        public string Surname { get; set; } // Doktorun soyadı
 
-        [Required]
-        [DisplayName("Working Hours")]
-        [ValidateNever]
+        [Required(ErrorMessage = "Doctor Field Cannot Be Left Blank.")] // Bu alanın zorunlu olduğunu ve boş bırakılamayacağını belirtir
+        [MaxLength(25)] // Bu alanın maksimum uzunluğunun 25 karakter olduğunu belirtir
+        [DisplayName("Doctor Department")] // Bu alanın görünen adının "Doctor Department" olduğunu belirtir
+        public string Department { get; set; } // Doktorun bölümü
 
-        public ICollection<WorkingHours>? WorkingHourses { get; set; }
+        [Required] // Bu alanın zorunlu olduğunu belirtir
+        [DisplayName("Working Hours")] // Bu alanın görünen adının "Working Hours" olduğunu belirtir
+        [ValidateNever] // Bu alanın doğrulanmaması gerektiğini belirtir
+        public ICollection<WorkingHours>? WorkingHourses { get; set; } // Doktorun çalışma saatlerini tutan koleksiyon
     }
 }

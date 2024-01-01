@@ -115,6 +115,7 @@ namespace HospitalManagement.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
         }
 
+        //Default Main structure
         /*public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
             returnUrl ??= Url.Content("~/");
@@ -177,7 +178,7 @@ namespace HospitalManagement.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     // Kullanıcıya Admin rolü atama
-                    await _userManager.AddToRoleAsync(user, "Admin");
+                    await _userManager.AddToRoleAsync(user, "Patient");
 
                     _logger.LogInformation("User created a new account with password.");
 

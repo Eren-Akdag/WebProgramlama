@@ -202,6 +202,9 @@ Nos médecins ont une profonde préoccupation pour la santé et le bien-être de
   <data name="Question8" xml:space="preserve">
     <value>Question 8 : Y a-t-il une possibilité d'hospitalisation dans votre hôpital ?</value>
   </data>
+  <data name="QuestionTitle" xml:space="preserve">
+    <value>Questions fréquemment posées</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Bienvenue</value>
   </data>

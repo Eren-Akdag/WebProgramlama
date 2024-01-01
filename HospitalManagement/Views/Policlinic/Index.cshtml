@@ -1,7 +1,7 @@
 ﻿@using HospitalManagement.Data;
 @model List<Policlinic>
 
-<h1 class="text-center my-4 text-dark">Polikinlikler</h1>
+<h1 class="text-center my-4 text-dark">Poliklinik</h1>
 
 @if (@TempData["basarili"] != null)
 {
@@ -30,6 +30,6 @@
     </div>
 
     <div class="d-grid gap-2 my-3">
-        <a asp-controller="Policlinic" asp-action="Add" class="btn btn-lg btn-dark">Yeni Polikinlik Ekle</a>
+        <a asp-controller="Policlinic" asp-action="Add" class="btn btn-lg btn-dark">Yeni Poliklinik Ekle</a>
     </div>
 </div>

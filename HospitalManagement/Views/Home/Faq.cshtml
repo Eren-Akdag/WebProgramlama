@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    //ViewData["Title"] = "Privacy Policy";
 }
 <h1>@ViewData["Title"]</h1>
 
@@ -28,7 +28,11 @@
 </head>
 <body>
     <div class="container my-3">
-        <h2>Sıkça Sorulan Sorular</h2>
+        <div class="row">
+            <div class="col text-center mb-3">
+                <h2>@_localization.Getkey("QuestionTitle")</h2>
+            </div>
+        </div>
         <div id="accordion">
             <!-- Soru 1 -->
             <div class="card">

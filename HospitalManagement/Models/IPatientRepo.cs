@@ -1,8 +1,11 @@
-﻿namespace HospitalManagement.Models
+﻿// HospitalManagement.Models ad alanı (namespace) içindeki sınıflar
+namespace HospitalManagement.Models
 {
-    public interface IPatientRepo:IRepo<Patient>
+    // IRepo<Patient> arayüzünden türetilmiş IPatientRepo arayüzü
+    public interface IPatientRepo : IRepo<Patient>
     {
-        void Update(Patient patient);
-        void Save();
+        void Update(Patient patient); // Bir hastayı güncelleyen metot
+
+        void Save(); // Değişiklikleri kaydeden metot
     }
 }

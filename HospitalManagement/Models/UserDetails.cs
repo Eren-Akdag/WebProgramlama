@@ -1,10 +1,14 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿// Microsoft.AspNetCore.Identity ad alanı (namespace) içindeki sınıflar
+using Microsoft.AspNetCore.Identity;
 
+// HospitalManagement.Models ad alanı (namespace) içindeki sınıflar
 namespace HospitalManagement.Models
 {
-    public class UserDetails:IdentityUser
+    // IdentityUser sınıfından türetilmiş UserDetails sınıfı
+    public class UserDetails : IdentityUser
     {
-        public string UserAd { get; set; }
-        public string UserSoyad { get; set; }
+        public string UserAd { get; set; } // Kullanıcının adı
+
+        public string UserSoyad { get; set; } // Kullanıcının soyadı
     }
 }

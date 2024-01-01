@@ -1,11 +1,13 @@
-﻿using HospitalManagement.Models;
-
+﻿// HospitalManagement.Models ad alanı (namespace) içindeki sınıflar
 namespace HospitalManagement.Models
 {
-    public interface IDoctorRepo:IRepo<Doctor>
+    // IRepo<Doctor> arayüzünden türetilmiş IDoctorRepo arayüzü
+    public interface IDoctorRepo : IRepo<Doctor>
     {
-        void Update(Doctor doctor);
-        void Save();
-        ICollection<WorkingHours> GetDoctorWorkingHours(int doctorId);
+        void Update(Doctor doctor); // Bir doktoru güncelleyen metot
+
+        void Save(); // Değişiklikleri kaydeden metot
+
+        ICollection<WorkingHours> GetDoctorWorkingHours(int doctorId); // Belirli bir doktorun çalışma saatlerini döndüren metot
     }
 }

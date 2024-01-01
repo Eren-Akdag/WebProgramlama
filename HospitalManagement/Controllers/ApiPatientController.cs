@@ -1,22 +1,28 @@
-﻿using System.Linq;
+﻿// System.Linq, Microsoft.AspNetCore.Mvc, HospitalManagement.Models ve HospitalManagement.Data isim alanlarını kullanıyoruz.
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using HospitalManagement.Models;
 using HospitalManagement.Data;
 
+// HospitalManagement.Controllers isim alanı içerisindeyiz.
 namespace HospitalManagement.Controllers
 {
+    // Bu sınıfın rotası "api/[controller]" olarak belirlenmiştir ve bu bir API Controller'dır.
     [Route("api/[controller]")]
     [ApiController]
-    public class ApiPatientController : ControllerBase 
+    public class ApiPatientController : ControllerBase
     {
+        // IPatientRepo tipinde bir özel alan tanımlanmıştır.
         private readonly IPatientRepo _patientRepo;
 
+        // Yapıcı metot ile IPatientRepo tipindeki nesne enjekte edilmiştir.
         public ApiPatientController(IPatientRepo patientRepo)
         {
             _patientRepo = patientRepo;
         }
 
         // GET: api/Patients
+        // Tüm hastaları getiren bir HTTP GET metodu.
         [HttpGet]
         public IEnumerable<Patient> GetPatients()
         {
@@ -24,6 +30,7 @@ namespace HospitalManagement.Controllers
         }
 
         // GET: api/Patients/5
+        // Belirli bir ID'ye sahip hastayı getiren bir HTTP GET metodu.
         [HttpGet("{id}")]
         public ActionResult<Patient> GetPatient(int id)
         {
@@ -38,6 +45,7 @@ namespace HospitalManagement.Controllers
         }
 
         // PUT: api/Patients/5
+        // Belirli bir ID'ye sahip hastayı güncelleyen bir HTTP PUT metodu.
         [HttpPut("{id}")]
         public IActionResult PutPatient(int id, Patient patient)
         {
@@ -53,6 +61,7 @@ namespace HospitalManagement.Controllers
         }
 
         // POST: api/Patients
+        // Yeni bir hasta oluşturan bir HTTP POST metodu.
         [HttpPost]
         public ActionResult<Patient> PostPatient(Patient patient)
         {
@@ -63,6 +72,7 @@ namespace HospitalManagement.Controllers
         }
 
         // DELETE: api/Patients/5
+        // Belirli bir ID'ye sahip hastayı silen bir HTTP DELETE metodu.
         [HttpDelete("{id}")]
         public IActionResult DeletePatient(int id)
         {

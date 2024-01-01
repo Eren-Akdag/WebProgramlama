@@ -13,6 +13,7 @@ namespace HospitalManagement
 {
     public class Program
     {
+        //public static async Task Main(string[] args)
         //public static void Main(string[] args)
         public static async Task Main(string[] args)
         {
@@ -74,6 +75,8 @@ namespace HospitalManagement
 
             builder.Services.AddScoped<IWorkingHoursRepo, WorkingHoursRepo>();
             builder.Services.AddScoped<IEmailSender, EmailSender>();
+
+            builder.Services.AddHttpClient();
 
             var app = builder.Build();
 

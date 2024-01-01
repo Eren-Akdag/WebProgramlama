@@ -202,6 +202,9 @@ Our doctors deeply care about the health and well-being of our patients and cont
   <data name="Question8" xml:space="preserve">
     <value>Question 8: Is there any possibility of hospitalization in your hospital?</value>
   </data>
+  <data name="QuestionTitle" xml:space="preserve">
+    <value>Frequently Asked Questions</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Welcome </value>
   </data>

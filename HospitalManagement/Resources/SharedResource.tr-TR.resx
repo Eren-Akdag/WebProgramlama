@@ -202,6 +202,9 @@ Doktorlarımız, hastalarımızın sağlığı ve iyiliği konusunda derinden en
   <data name="Question8" xml:space="preserve">
     <value>Soru 8: Hastanenizde yatış imkanı var mı?</value>
   </data>
+  <data name="QuestionTitle" xml:space="preserve">
+    <value>Sıkça Sorulan Sorular</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Hoşgeldiniz</value>
   </data>
